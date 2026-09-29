@@ -1,0 +1,19 @@
+services:
+  formatum:
+    container_name: formatum
+    image: nexus.leuphana.de:5005/escience/formatum:devlocal
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    user: "0:0"
+    environment:
+      FORMATUM_METADATA_CONFIG_PATH: "/formatum/metadata-config.yml"
+      FORMATUM_TEMPLATES_PATH: "/formatum/templates"
+    volumes:
+      - ./:/formatum
+      - m2-cache:/root/.m2
+    ports:
+      - "8181:8181"
+      - "5050:5050"
+volumes:
+  m2-cache:

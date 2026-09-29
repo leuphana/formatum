@@ -1,0 +1,7 @@
+metadata:
+  - field: "key.example.first"
+    mandatory: true
+    displayName: "Erstes Beispiel"
+  - field: "key.example.second"
+    mandatory: false
+    displayName: "Zweites Beispiel"

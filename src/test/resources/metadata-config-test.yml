@@ -1,0 +1,15 @@
+# Fixture for the @QuarkusTest. Deliberately independent of the real
+# metadata-config.yml, which is gitignored and absent from a fresh clone.
+metadata:
+  - field: "dc.title"
+    mandatory: true
+    displayName: "Titel/Title"
+  - field: "dc.contributor.author"
+    mandatory: true
+    displayName: "Autor*in/Author"
+  - field: "dc.description.abstract"
+    mandatory: false
+    displayName: "Zusammenfassung/Abstract"
+  - field: "local.sdg"
+    mandatory: false
+    displayName: "SDG"
