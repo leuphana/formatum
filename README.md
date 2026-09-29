@@ -18,7 +18,7 @@ deleted after the response has been written.
 
 ## Requirements
 
-* Java 17 and Maven (use the bundled `./mvnw`)
+* Java 21 and Maven (use the bundled `./mvnw`)
 * `pandoc` and `pdflatex` on the `PATH`. Both are baked into the provided container
   images, so running Formatum outside a container requires a local Pandoc + TeX Live
   installation
@@ -314,10 +314,6 @@ Three things are worth knowing when operating it:
 * **The port is fixed at 8181.** The entrypoint passes it as a system property, which
   takes precedence over environment variables, so `QUARKUS_HTTP_PORT` will not change
   it. Publish a different host port instead.
-
-### CI
-
-TODO: document the build pipeline once the move to GitHub is complete.
 
 ## License
 

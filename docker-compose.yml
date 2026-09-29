@@ -1,7 +1,7 @@
 services:
   formatum:
     container_name: formatum
-    image: nexus.leuphana.de:5005/escience/formatum:devlocal
+    image: ghcr.io/leuphana/formatum:devlocal
     build:
       context: .
       dockerfile: Dockerfile.dev
